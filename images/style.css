@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    background-image: url(https://img.freepik.com/premium-photo/beautiful-tropical-beach-sea-ocean-with-white-cloud-blue-sky_524876-493.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 695px;
+}
+.shipimg {
+    height: 200px;
+    width: 323px;
+    position: absolute;
+    bottom: 175px;
+    right: 45px;
+    animation-name: ship;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.sunimg {
+    position: absolute;
+    top: -16px;
+    left: -11px;
+    height: 200px;
+    width: 200px;
+    animation-name: sun;
+    animation-duration: 1.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.birdsimg {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 247px;
+    height: 249px;
+    width: 410px;
+    animation-name: birds;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.cloudimg{
+    position: absolute;
+    top: -31px;
+    left: 165px;
+    height: 197px;
+    width: 351px;
+    animation-name: cloud;
+    animation-delay: o.2s;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.planeimg {
+    position: absolute;
+    top: 288px;
+    right: 100px;  
+    height: 105px;
+    width: 179px;
+    rotate: -14deg;
+    animation-name: plane ;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes birds {
+    from {
+        top: 50px;
+        left: 0;
+    }
+    to {
+        top: 10px;
+        left: 1100px;
+    }
+}
+@keyframes ship {
+    0%
+    {
+        bottom: 185px;
+        right: 45px;
+    }
+    50% {
+        bottom: 150px;
+        right: 1100px;
+        
+    }
+   100% {
+        bottom: 185px;
+        right: 45px;
+        transform: scale(1.5);
+   }
+    
+}
+@keyframes sun {
+    form {
+        top: -16px;
+        left: -11px;
+    }
+    to {
+        top: 0px;
+        left: -11px;
+    }
+}
+@keyframes cloud {
+    form {
+        top: -31px;
+        left: 165px;
+    }
+    to {
+        top: -31px;
+        left: 900px;
+    }
+}
+@keyframes plane {
+    form {
+        top: 288px;
+        right: 100px;
+        opacity: 1;
+    }
+    to {
+        top: 270px; 
+        right: 1300px;
+        opacity: 0;
+        transform: scale(0.5);
+    } 
+}
